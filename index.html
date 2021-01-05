@@ -25,7 +25,7 @@
 
         <section class="navigation__middle">
           <div class="navigation__wrapper">
-            <div class="toggle"></div>
+            <div class="toggle" onclick="toggleMenu()"></div>
             <img
               src="assets/kk_logo_pos.svg"
               alt="Kolding Kommune Logo"
@@ -42,5 +42,16 @@
         </section>
       </nav>
     </header>
+
+    <script>
+      function toggleMenu() {
+        const x = document.querySelector(".navigation__middle-list")
+        if (x.style.display === "none") {
+          x.style.display = "block"
+        } else {
+          x.style.display = "none"
+        }
+      }
+    </script>
   </body>
 </html>
