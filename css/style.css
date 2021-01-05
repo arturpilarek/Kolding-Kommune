@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -8,12 +10,13 @@
 .navigation__top {
   background-color: black;
   color: white;
-  font-size: 0.7rem;
+  font-size: 0.4rem;
   font-family: Arial, Helvetica, sans-serif;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
 }
 
 .navigation__top li {
@@ -102,6 +105,36 @@
   font-size: 21px;
 }
 
+/*    Hero   */
+
+.hero {
+  width: 100vw;
+  height: 250px;
+  background-image: url(../assets/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero img {
+  height: auto;
+  width: 110px;
+  padding-top: 30px;
+}
+
+.hero h1 {
+  font-family: Open Sans;
+  font-weight: 800;
+  font-size: 35px;
+  color: white;
+  padding-top: 20px;
+}
+
+/* Mobile */
 @media (max-width: 950px) {
   .navigation__middle-list {
     display: none;
@@ -119,9 +152,21 @@
   }
 }
 
+/* Between */
+@media (min-width: 600px) {
+  .navigation__top {
+    font-size: 0.6rem;
+  }
+}
+
+/* Desktop */
 @media (min-width: 950px) {
   .navigation__wrapper div {
     display: none;
+  }
+
+  .navigation__top {
+    font-size: 0.8rem;
   }
 
   .logo {
