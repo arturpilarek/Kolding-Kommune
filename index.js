@@ -1,8 +1,10 @@
-function toggleMenu() {
-  const x = document.querySelector(".navigation__middle-list")
-  if (x.style.display === "none") {
-    x.style.display = "block"
-  } else {
-    x.style.display = "none"
-  }
+const navSlide = () => {
+  const burger = document.querySelector(".burger")
+  const nav = document.querySelector(".navigation__middle-list")
+
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("nav-active")
+  })
 }
+
+navSlide()

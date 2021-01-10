@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/kasse-oversigt.css" />
     <script
       src="https://kit.fontawesome.com/af4e7a822b.js"
       crossorigin="anonymous"
@@ -13,7 +14,7 @@
   <body>
     <header>
       <nav class="navigation">
-        <ul class="navigation__top">
+        <ul class="navigation__top" id="top">
           <li><a href="#">Sammen designer vi livet</a></li>
           <li><a href="#">Om kommunen</a></li>
           <li><a href="#">Ledige stillinger</a></li>
@@ -25,7 +26,11 @@
 
         <section class="navigation__middle">
           <div class="navigation__wrapper">
-            <div class="toggle" onclick="toggleMenu()"></div>
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
             <img
               src="assets/kk_logo_pos.svg"
               alt="Kolding Kommune Logo"
@@ -33,13 +38,27 @@
             />
           </div>
           <ul class="navigation__middle-list">
-            <li><a href="#">Borger</a></li>
-            <li><a href="#">Erverv</a></li>
-            <li><a href="#">Politik</a></li>
+            <li>
+              <a href="#">Borger</a
+              ><i class="fas fa-chevron-down arrow-down1"></i>
+            </li>
+            <li>
+              <a href="#">Erverv</a
+              ><i class="fas fa-chevron-down arrow-down2"></i>
+            </li>
+            <li>
+              <a href="#">Politik</a
+              ><i class="fas fa-chevron-down arrow-down3"></i>
+            </li>
             <li><a href="#">Tilflytter</a></li>
           </ul>
           <i class="fas fa-search"></i>
         </section>
+
+        <div class="navigation__bottom">
+          <a href="#">Ledige kasser</a>
+          <a href="#">Om projektet</a>
+        </div>
       </nav>
     </header>
 
@@ -48,21 +67,24 @@
       <h1>Den Lille Oase</h1>
     </section>
 
-    <article class="om-os">
-      <h2>Hvem er vi?</h2>
-      <div class="om-os__wrapper">
+    <div class="arrow-footer__wrapper">
+      <a href="#top" class="arrow"
+        ><img src="assets/Icon metro-arrow-up.png" alt="Arrow Icon"
+      /></a>
+      <footer>
         <p>
-          Velkommen til Den Lille Oase - en lille byhave ejet af Kolding Kommune
-          for Koldings borgere. Her kan borgerene dyrke grøntsager, frugter og
-          blomster, samt hygge sig med andre og gøre Kolding grønnere. Byhaven
-          blev oprindeligt startet da tre studerende bankede på kommunens dør
-          med initiativet om at skabe et åbent og ’rummeligt’ sted med plads til
-          alle der var interesseret i havebrug. Byhaven ligger på den grønne
-          trekant ved åen bag Ågade 15, 6000 Kolding.
+          Byhave<br />
+          Ågade 15,<br />
+          6000 Kolding<br />
+          12345678
         </p>
-        <img src="assets/om-os.png" alt="Koldings Byhave billede" />
-      </div>
-    </article>
+        <img src="assets/oaselogo.png" alt="Garden's logo" class="oase-logo" />
+        <div class="media-wrapper">
+          <img src="assets/Icon ionic-logo-facebook.png" alt="Facebook Icon" />
+          <img src="assets/Icon material-mail.png" alt="Mail Icon" />
+        </div>
+      </footer>
+    </div>
 
     <script src="index.js"></script>
   </body>

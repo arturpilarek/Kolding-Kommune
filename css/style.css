@@ -1,12 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
-body {
-  overflow-x: hidden;
+h2 {
+  font-family: Open Sans;
+  font-weight: 600;
+  margin: 15px 0;
+  font-size: 22px;
+  text-align: center;
+}
+
+p {
+  font-family: Roboto;
 }
 
 /* Top navigation */
@@ -57,22 +66,6 @@ body {
   display: flex;
 }
 
-/*
-.active {
-  position: absolute;
-  top: 16.4vh;
-  padding-left: 0;
-  display: flex;
-  flex-direction: column;
-  padding-right: 20vw;
-  z-index: 3;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2em;
-  font-weight: 600;
-  background-color: white;
-}
-*/
-
 .navigation__middle-list a {
   text-decoration: none;
   color: black;
@@ -87,27 +80,43 @@ body {
   align-items: center;
 }
 
+.burger div {
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  margin: 5px;
+}
+
+.burger {
+  cursor: pointer;
+}
+
 .logo {
   width: 105px;
   height: 26px;
   margin-left: 45px;
 }
 
-.toggle {
-  display: inline-block;
-  filter: invert(1);
-  width: 60px;
-  height: 60px;
-  background: url(https://i.ibb.co/HrfVRcx/menu.png);
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: center;
-  cursor: pointer;
-}
-
 .fa-search {
   font-size: 21px;
-  padding-right: 50px;
+  padding-right: 35px;
+}
+
+/* Bottom Navigation  */
+
+.navigation__bottom {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0;
+}
+
+.navigation__bottom a {
+  text-decoration: none;
+  padding: 0 4%;
+  color: black;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 /*    Hero   */
@@ -142,70 +151,119 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-/* Om os  */
-
-.om-os {
+/* Footer */
+.arrow {
+  display: block;
+  background-color: #faa613;
+  width: 88px;
+  height: 24px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
+  align-self: flex-end;
 }
 
-.om-os__wrapper {
+.arrow-footer__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  background-color: #7ca873;
+  padding: 15px;
+  color: white;
 }
 
-.om-os h2 {
-  font-family: Open Sans;
-  font-weight: 600;
-  margin: 10px 0;
-  font-size: 22px;
+.media-wrapper {
+  display: flex;
 }
 
-.om-os p {
-  font-family: Roboto;
-  font-weight: 400;
-  max-width: 80vw;
-}
-
-.om-os img {
-  width: 60vw;
+.media-wrapper img {
   height: auto;
-  margin: 10px 0;
+  width: 45px;
+}
+
+.media-wrapper img:first-child {
+  margin-right: 10px;
+}
+
+.oase-logo {
+  height: auto;
+  width: 60px;
 }
 
 /*Media queries */
-/* Mobile */
-@media screen and (max-width: 768px) {
+/*Mobile */
+@media screen and (max-width: 700px) {
+  .navigation__top {
+    font-size: 0.6rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+  }
+
   .navigation__middle-list {
-    display: none;
-    position: absolute;
-    top: 21.4%;
-    padding-left: 0;
-    display: flex;
-    flex-direction: column;
-    padding-right: 20vw;
-    z-index: 3;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    font-weight: 600;
-    background-color: white;
+    top: 20% !important;
   }
 }
 
 /* Between */
 @media screen and (max-width: 900px) {
-  .navigation__top {
-    font-size: 0.6rem;
+  .navigation__middle-list {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+    top: 11.62vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 280px;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+    padding: 0;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  .arrow-down1 {
+    padding-left: 160px;
+  }
+  .arrow-down2 {
+    padding-left: 164px;
+  }
+  .arrow-down3 {
+    padding-left: 166px;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .navigation__middle-list {
+    top: 10.4vh;
   }
 }
 
+.navigation__top {
+  font-size: 0.7rem;
+}
+
 /* Desktop */
-@media (min-width: 901px) {
-  .navigation__wrapper div {
+@media screen and (min-width: 1000px) {
+  .burger {
     display: none;
   }
 
@@ -218,37 +276,87 @@ body {
     height: 58px;
     margin-left: 90px;
   }
+  .fa-search {
+    padding-right: 85px;
+  }
 
   .navigation__middle-list {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.6em;
     font-weight: 600;
+    margin-right: 320px;
+  }
+
+  .navigation__middle-list i {
+    display: none;
   }
 
   .hero {
-    width: 96%;
+    width: 90%;
     margin: 0 auto;
-    height: 50vh;
-    margin-top: 44px;
+    height: 48vh;
   }
 
-  .om-os__wrapper {
-    flex-direction: row;
+  .hero img {
+    width: 180px;
+    padding-top: 30px;
   }
 
-  .om-os img {
-    width: 28vw;
+  .hero h1 {
+    font-size: 80px;
+    padding-top: 20px;
   }
 
-  .om-os h2 {
-    font-size: 50px;
-    padding-top: 68px;
-    padding-bottom: 60px;
+  .arrow {
+    width: 120px;
+    height: 32px;
+    align-self: center;
   }
 
-  .om-os p {
-    max-width: 60vw;
-    padding-right: 88px;
-    font-size: 32px;
+  .arrow-footer__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    padding: 35px;
+  }
+
+  footer p {
+    font-size: 30px;
+  }
+
+  .media-wrapper img {
+    height: auto;
+    width: 60px;
+  }
+
+  .media-wrapper img:first-child {
+    margin-right: 20px;
+  }
+
+  .oase-logo {
+    height: auto;
+    width: 110px;
+    margin-right: 40px;
+  }
+
+  .navigation__bottom {
+    padding: 20px 0;
+  }
+
+  .navigation__bottom a {
+    margin-right: 5%;
+    padding: 0;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-left: 180px;
+  }
+  .navigation__middle-list {
+    margin-right: 290px;
   }
 }
