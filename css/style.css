@@ -151,6 +151,168 @@ p {
   font-family: Roboto, sans-serif;
 }
 
+/* Om os  */
+
+.om-os {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.om-os__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.om-os p {
+  line-height: 30px;
+  font-size: 16px;
+  max-width: 90vw;
+  text-align: center;
+}
+
+.om-os img {
+  width: 80%;
+  height: auto;
+  margin: 15px 0;
+}
+
+hr {
+  width: 88%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+/* Bestil din kasse */
+.order h2 {
+  text-align: center;
+}
+
+.order p {
+  line-height: 30px;
+  max-width: 90vw;
+  text-align: center;
+}
+
+.order a,
+.link-button {
+  margin: 0 auto;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #7ca873;
+  border-radius: 60px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-family: Roboto;
+  font-size: 25px;
+  margin: 15px 0;
+}
+
+.order a:hover,
+.link-button:hover {
+  background-color: #faa613;
+}
+
+.button__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.order__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.order img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Arrangementer */
+.events {
+  padding: 15px 40px 0 40px;
+}
+
+.events h2 {
+  padding: 0;
+  margin-top: 0;
+}
+
+h6 {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #6e5d5d;
+}
+
+h3 {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.events p {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.events img {
+  width: 100%;
+  height: auto;
+  padding: 15px 0;
+}
+
+.balaften {
+  padding-top: 3%;
+}
+
+/* 2 andre byhaver */
+
+.twogardens {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lunderskov,
+.nicolai {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 90%;
+  height: 270px;
+  margin: 15px 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lunderskov {
+  background-image: url(../assets/Lunderskov.png);
+}
+
+.nicolai {
+  background-image: url(../assets/NicolaiByhave.png);
+}
+
+.other-gardens h5 {
+  color: white;
+  font-family: Open Sans;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 50px;
+}
+
 /* Footer */
 .arrow {
   display: block;
@@ -183,7 +345,7 @@ footer {
 }
 
 .media-wrapper img {
-  height: auto;
+  height: 45px;
   width: 45px;
 }
 
@@ -307,6 +469,119 @@ footer {
     padding-top: 20px;
   }
 
+  .om-os__wrapper {
+    flex-direction: row;
+  }
+
+  .om-os img {
+    width: 28vw;
+    align-self: flex-start;
+  }
+
+  .om-os h2,
+  .order h2,
+  .events h2,
+  .other-gardens h2 {
+    font-size: 50px;
+    margin-top: 68px;
+    margin-bottom: 60px;
+  }
+
+  .om-os p {
+    max-width: 60vw;
+    padding-right: 88px;
+    font-size: 28px;
+    text-align: left;
+    line-height: 1.4em;
+  }
+
+  .order__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .order img {
+    width: 50%;
+    height: auto;
+    padding-right: 88px;
+  }
+
+  .order p {
+    max-width: 40vw;
+    font-size: 28px;
+    text-align: left;
+    line-height: 1.4em;
+  }
+
+  .order a {
+    padding: 20px 60px;
+    font-size: 45px;
+    margin-top: 12%;
+  }
+
+  .event__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .season-start,
+  .balaften {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  h6 {
+    padding-top: 1%;
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .events p {
+    font-size: 30px;
+    line-height: 39px;
+  }
+
+  .events img {
+    padding-right: 70px;
+    width: 30vw;
+  }
+
+  .balaften {
+    padding-top: 2%;
+  }
+
+  .twogardens {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  .lunderskov,
+  .nicolai {
+    width: 45%;
+    height: 45vh;
+    margin: 15px 23px;
+  }
+
+  .twogardens h5 {
+    font-size: 45px;
+  }
+
   .arrow {
     width: 120px;
     height: 32px;
@@ -327,7 +602,7 @@ footer {
   }
 
   .media-wrapper img {
-    height: auto;
+    height: 60px;
     width: 60px;
   }
 

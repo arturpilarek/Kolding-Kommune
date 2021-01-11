@@ -1,0 +1,296 @@
+/*    Kasseoversigt   */
+
+.Kasseoversigt img {
+  height: auto;
+  width: 97vw;
+  padding: 7px;
+  margin: 0 auto;
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*    Ledighedsoversigt  */
+
+.Ledighedsoversigt {
+  border: 1px solid #707070;
+  margin: 15px 15px 25px 15px;
+}
+.Ledighedsoversigt > h2 {
+  margin: 0;
+  padding: 14px 0px;
+}
+.Ledighedsoversigt p {
+  font-family: Open Sans;
+  font-weight: 650;
+  font-size: 22px;
+  color: white;
+  padding: 9px 0px;
+  text-align: center;
+}
+.Ledig,
+.Optaget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Ledig > h2 {
+  margin: 0;
+  padding-bottom: 21px;
+}
+.Ledig > div {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 14px 0;
+  width: 240px;
+  height: 48px;
+  background-color: #7ca873;
+}
+.Optaget > h2 {
+  padding-top: 7px;
+  margin: 0;
+  padding-bottom: 21px;
+}
+.Optaget > div {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 14px 0;
+  width: 240px;
+  height: 48px;
+  background-color: #9a7777;
+}
+.Optaget {
+  margin-bottom: 10px;
+}
+
+/*    Kontakt   */
+
+.Kontakt {
+  margin-bottom: 10px;
+  padding: 0 30px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Kontakt > h2 {
+  margin: 0 0 25px 0;
+}
+.Kontakt input[type="text"] {
+  width: 100%;
+  height: 65px;
+  padding: 12px;
+  margin-bottom: 14px;
+  background-color: rgba(124, 168, 115, 0.32);
+  color: black;
+  font-size: 22px;
+  border: 1px solid #707070;
+}
+.Kontakt input[type="email"] {
+  width: 100%;
+  height: 65px;
+  padding: 12px;
+  margin-bottom: 14px;
+  background-color: rgba(124, 168, 115, 0.32);
+  color: black;
+  font-size: 22px;
+  border: 1px solid #707070;
+}
+.Kontakt textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: rgba(124, 168, 115, 0.32);
+  color: black;
+  font-size: 22px;
+  border: 1px solid #707070;
+  font-family: Roboto;
+}
+.Kontakt input[type="submit"] {
+  margin: 35px 25.5px 40px 25.5px;
+  padding: 11px 58px;
+  text-align: center;
+  background-color: rgba(124, 168, 115, 0.32);
+  color: black;
+  font-size: 25px;
+  border-radius: 25px;
+  border: 1px solid #707070;
+}
+
+.Kontakt input[type="submit"]:hover {
+  background-color: rgba(250, 166, 19, 0.23);
+}
+
+.Kontakt ::placeholder {
+  color: black;
+  font-size: 22px;
+}
+
+/*  Between 2 */
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  /*  Ledighedsoversigt */
+  .ledig-optaget__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .Ledighedsoversigt > h2 {
+    font-size: 30px;
+  }
+  .Ledighedsoversigt p {
+    font-size: 28px;
+    padding: 6px 0px;
+  }
+  .Ledig > div {
+    margin: 0 51px 20px 51px;
+    width: 27vw;
+    height: 53px;
+  }
+  .Optaget > div {
+    margin: 0 51px 20px 51px;
+    width: 27vw;
+    height: 53px;
+  }
+  /*  Kontakt */
+  .Kontakt > h2 {
+    margin: 30px 0 40px 0;
+    font-size: 30px;
+  }
+  .Kontakt input[type="text"] {
+    width: 60%;
+    height: 65px;
+    padding: 12px;
+    margin-bottom: 14px;
+    font-size: 28px;
+  }
+  .Kontakt input[type="email"] {
+    width: 60%;
+    height: 65px;
+    padding: 12px;
+    margin-bottom: 14px;
+    font-size: 28px;
+  }
+  .Kontakt textarea {
+    width: 60%;
+    padding: 12px;
+    font-size: 28px;
+  }
+  .Kontakt input[type="submit"] {
+    margin: 35px 0 40px 0;
+    padding: 6px 56px;
+    font-size: 25px;
+    border-radius: 25px;
+  }
+  .Kontakt ::placeholder {
+    color: black;
+    font-size: 28px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1000px) {
+  /*    Kasseoversigt   */
+  .Kasseoversigt > h2 {
+    font-size: 40px;
+  }
+  .Kasseoversigt img {
+    width: 97vw;
+    padding: 25px;
+  }
+
+  /*    Ledighedsoversigt  */
+
+  .Ledighedsoversigt {
+    width: auto;
+    height: auto;
+    border: 2px solid #707070;
+    margin: 35px 30px 45px 30px;
+  }
+
+  .ledig-optaget__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .Ledighedsoversigt > h2 {
+    padding: 32px 0px;
+    font-size: 40px;
+  }
+  .Ledighedsoversigt p {
+    font-size: 40px;
+    padding: 6px 0 15px 0;
+  }
+
+  .Ledig > h2 {
+    padding-bottom: 21px;
+    font-size: 40px;
+  }
+  .Ledig > div {
+    margin: 0 51px 30px 51px;
+    width: 29vw;
+    height: 65px;
+  }
+  .Optaget > h2 {
+    padding-top: 0;
+    padding-bottom: 21px;
+    font-size: 40px;
+  }
+  .Optaget > div {
+    margin: 0 51px 30px 51px;
+    width: 29vw;
+    height: 65px;
+  }
+
+  /*    Kontakt   */
+
+  .Kontakt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 30px;
+  }
+  .Kontakt > h2 {
+    margin: 0 0 45px 0;
+    font-size: 40px;
+  }
+
+  .Kontakt input[type="text"] {
+    width: 80%;
+    height: 70px;
+    padding: 12px;
+    margin-bottom: 14px;
+    font-size: 35px;
+  }
+  .Kontakt input[type="email"] {
+    width: 80%;
+    height: 70px;
+    padding: 12px;
+    margin-bottom: 14px;
+    font-size: 35px;
+  }
+  .Kontakt textarea {
+    width: 80%;
+    padding: 12px;
+    font-size: 35px;
+  }
+  .Kontakt input[type="submit"] {
+    margin: 35px 0 40px 0;
+    padding: 6px 56px;
+    font-size: 35px;
+    border-radius: 25px;
+  }
+  .Kontakt ::placeholder {
+    color: black;
+    font-size: 35px;
+  }
+}

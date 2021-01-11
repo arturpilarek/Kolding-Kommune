@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Kasseoversigt</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/kasse-oversigt.css" />
     <script
@@ -15,13 +15,13 @@
     <header>
       <nav class="navigation">
         <ul class="navigation__top" id="top">
-          <li><a href="#">Sammen designer vi livet</a></li>
-          <li><a href="#">Om kommunen</a></li>
-          <li><a href="#">Ledige stillinger</a></li>
-          <li><a href="#">Nyhedsbrev</a></li>
-          <li><a href="#">Netbutik</a></li>
-          <li><a href="#">Nyhedsarkiv</a></li>
-          <li><a href="#">Print</a><i class="fas fa-print"></i></li>
+          <li><a href="https://www.kolding.dk/om-kommunen/designvisionen/">Sammen designer vi livet</a></li>
+          <li><a href="https://www.kolding.dk/om-kommunen/">Om kommunen</a></li>
+          <li><a href="https://www.kolding.dk/moduler/ledige-stillinger/">Ledige stillinger</a></li>
+          <li><a href="https://www.kolding.dk/moduler/nyhedsbreve/">Nyhedsbrev</a></li>
+          <li><a href="https://shopkolding.dk/">Netbutik</a></li>
+          <li><a href="https://www.kolding.dk/om-kommunen/nyhedsarkiv/">Nyhedsarkiv</a></li>
+          <li><a href="javascript:window.print(0);">Print</a><i class="fas fa-print"></i></li>
         </ul>
 
         <section class="navigation__middle">
@@ -39,25 +39,25 @@
           </div>
           <ul class="navigation__middle-list">
             <li>
-              <a href="#">Borger</a
+              <a href="https://www.kolding.dk/borger/">Borger</a
               ><i class="fas fa-chevron-down arrow-down1"></i>
             </li>
             <li>
-              <a href="#">Erverv</a
+              <a href="https://www.kolding.dk/erhverv/">Erverv</a
               ><i class="fas fa-chevron-down arrow-down2"></i>
             </li>
             <li>
-              <a href="#">Politik</a
+              <a href="https://www.kolding.dk/politik/byradet/">Politik</a
               ><i class="fas fa-chevron-down arrow-down3"></i>
             </li>
-            <li><a href="#">Tilflytter</a></li>
+            <li><a href="https://komtilkolding.dk/velkommen-til-kolding/">Tilflytter</a></li>
           </ul>
           <i class="fas fa-search"></i>
         </section>
 
         <div class="navigation__bottom">
           <a href="#">Ledige kasser</a>
-          <a href="#">Om projektet</a>
+          <a href="index.html">Om projektet</a>
         </div>
       </nav>
     </header>
@@ -66,6 +66,71 @@
       <img src="assets/oaselogo.png" alt="Den Lille Oase Logo" />
       <h1>Den Lille Oase</h1>
     </section>
+
+
+    <section class="Kasseoversigt">
+      <h2>Kasseoversigt</h2>
+      <div class="img-wrapper">
+        <img src="assets/DenLilleOase_grundplan2.jpg" alt="Grundplan" />
+      </div>
+    </section>
+    <section class="Ledighedsoversigt">
+      <h2>Ledighedsoversigt</h2>
+      <div class="ledig-optaget__wrapper">
+        <div class="Ledig">
+          <h2>Ledig</h2>
+          <div>
+            <p>Kasse nr. 1</p>
+          </div>
+          <div>
+            <p>Kasse nr. 3</p>
+          </div>
+          <div>
+            <p>Kasse nr. 5</p>
+          </div>
+          <div>
+            <p>Kasse nr. 7</p>
+          </div>
+          <div>
+            <p>Kasse nr. 9</p>
+          </div>
+        </div>
+        <div class="Optaget">
+          <h2>Optaget</h2>
+          <div>
+            <p>Kasse nr. 2</p>
+          </div>
+          <div>
+            <p>Kasse nr. 4</p>
+          </div>
+          <div>
+            <p>Kasse nr. 6</p>
+          </div>
+          <div>
+            <p>Kasse nr. 8</p>
+          </div>
+          <div>
+            <p>Kasse nr. 10</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Kontakt">
+      <h2>Skriv til os og bestil din kasse. Det koster ikke noget!</h2>
+      <form>
+        <input type="text" placeholder="Navn" />
+        <input type="text" placeholder="Telefon" />
+        <input type="email" placeholder="E-mail" />
+        <textarea
+          name="Besked"
+          placeholder="Besked"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <input type="submit" value="Send besked" id="mysubmit" />
+      </form>
+    </section>
+  </main>
 
     <div class="arrow-footer__wrapper">
       <a href="#top" class="arrow"
@@ -76,12 +141,12 @@
           Byhave<br />
           Ågade 15,<br />
           6000 Kolding<br />
-          12345678
+          +45 29371289
         </p>
         <img src="assets/oaselogo.png" alt="Garden's logo" class="oase-logo" />
         <div class="media-wrapper">
-          <img src="assets/Icon ionic-logo-facebook.png" alt="Facebook Icon" />
-          <img src="assets/Icon material-mail.png" alt="Mail Icon" />
+          <a href="https://www.facebook.com/6000planter"><img src="assets/Icon ionic-logo-facebook.png" alt="Facebook Icon"></a>
+          <a href="mailto:mailto:denlilleoase@gmail.com"><img src="assets/Icon material-mail.png" alt="Mail Icon"></a>
         </div>
       </footer>
     </div>
